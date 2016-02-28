@@ -1,6 +1,7 @@
-angular.module('emailApp', ['ngRoute'])
-
-.config(function ($routeProvider) {
+angular.module('EmailApp', [
+    'ngRoute', 
+    'ngSanitize'
+]).config(function ($routeProvider) {
 
     'use strict';
     
@@ -18,4 +19,9 @@ angular.module('emailApp', ['ngRoute'])
         .otherwise({
             redirectTo: '/inbox'
         });
+}).run(function ($rootScope) {
+    $rootScope.$on('$routeChangerError', function (event, current, 
+        previous, rejection) {
+            console.log(event, current, previous, rejection);
+    })
 });
