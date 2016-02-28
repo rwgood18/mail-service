@@ -1,7 +1,7 @@
-angular.module('emailApp').controller('InboxCtrl', function ($scope) {
-        $scope.title = 'This is a title';
-        $scope.firstName = 'Ron';
-        $scope.lastName = 'Jeremy';
+angular.module('emailApp')
+    .controller('InboxCtrl', 
+        function InboxCtrl () {
+        this.title = 'My Inbox';
 
 /*        InboxFactory.getMessages()
             .success(function(jsonData, statusCode) {
