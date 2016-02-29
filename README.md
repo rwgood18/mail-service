@@ -1,2 +1,3 @@
 This is a generic frontend email application created for the purpose of practicing with Angular.js. The emails are not real. They are stored in a JSON file as are the details of each email. When the request for emails is made, it is not made to a server. It is made to the folder in the project directory containing the emails. In that way, it is similar to a frontend application making a request to a web service but not identical. Also, the email replies are not sent anywhere. They only appear as an alert on the screen when the user clicks send.
 Other libraries used include jquery(js) and bootstrap(css).
+Limited functionality can be seen at http://rwgood18.github.io/mail-service
