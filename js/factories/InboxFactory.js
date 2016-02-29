@@ -1,7 +1,4 @@
-/**
- * Factory: InboxFactory
- */
-angular.module('EmailApp')
+angular.module('emailApp')
   .factory('InboxFactory', function InboxFactory ($q, $http, $location) {
     'use strict';
     var exports = {};

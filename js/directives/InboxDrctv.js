@@ -1,7 +1,4 @@
-/**
- * Directive: Inbox <inbox></inbox>
- */
-angular.module('EmailApp')
+angular.module('emailApp')
   .directive('inbox', function InboxDrctv () {
     'use strict';
 

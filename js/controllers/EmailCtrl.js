@@ -1,4 +1,4 @@
-angular.module('EmailApp')
+angular.module('emailApp')
     .controller('EmailCtrl', 
         function EmailCtrl () {
 

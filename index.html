@@ -1,39 +1,35 @@
 <!doctype html>
-<html ng-app="EmailApp">
-  <head>
-    <meta charset="utf-8">
-    <title>AngularJS Email App</title>
-    <link href="css/style.css" rel="stylesheet">
-    <style>
-    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-      display: none !important;
-    }
-    </style>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-    <header class="header" role="banner">
-      <div class="header__text">
-        <p>Angular Mail by <a href="http://www.thinkful.com/a/learn">Thinkful.com</a></p>
-      </div>
-    </header>
+<html ng-app='emailApp'>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <main class="main" role="main">
-      <div ng-view class="flex"></div>
-    </main>
+    </head>
+    <body>
+        <nav class="header-color">
+            <div class="container">
+                
+                <header class="light-text"><h2>Sending and Receiving Email</h2></header>
+            </div>
+        </nav>
+        <main class="">
+            <div ng-view class=""></div>
+        </main>
 
-    <!-- Vendor libraries -->
-    <script src="lib2/jquery-v1.11.1.js"></script>
-    <script src="lib2/angular-v1.2.22.js"></script>
-    <script src="lib2/angular-route-v1.2.22.js"></script>
-    <script src="lib2/angular-sanitize-v1.2.22.js"></script>
-    <!-- Application Files -->
-    <script src="js/app.js"></script>
-    <script src="js/controllers/InboxCtrl.js"></script>
-    <script src="js/controllers/EmailCtrl.js"></script>
-    <script src="js/factories/InboxFactory.js"></script>
-    <script src="js/factories/EmailFactory.js"></script>
-    <script src="js/directives/InboxDrctv.js"></script>
-    <script src="js/directives/EmailDrctv.js"></script>
-  </body>
+        <!--Vendor Libraries-->
+        <script src="lib/jquery-v1.11.1.js"></script>
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-route.min.js"></script>
+        <script src="lib/angular-sanitize.min.js"></script>
+
+        <!--Application Files-->
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/controllers/InboxCtrl.js"></script>
+        <script type="text/javascript" src="js/controllers/EmailCtrl.js"></script>
+        <script type="text/javascript" src="js/factories/InboxFactory.js"></script>
+        <script type="text/javascript" src="js/factories/EmailFactory.js"></script>
+        <script type="text/javascript" src="js/directives/InboxDrctv.js"></script>
+        <script type="text/javascript" src="js/directives/EmailDrctv.js"></script>
+    </body>
 </html>

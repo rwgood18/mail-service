@@ -1,4 +1,4 @@
-angular.module('EmailApp')
+angular.module('emailApp')
     .factory('EmailFactory', 
         function EmailFactory ($q, $http, $routeParams) {
 
@@ -13,7 +13,6 @@ angular.module('EmailApp')
             };
 
             exports.getMessage = function (params) {
-                console.log('getMessage called on message # ' + params.id);
                 if (params.id) {
                     var deferred = $q.defer();
                     $http.get('json/message/' + params.id + '.json').

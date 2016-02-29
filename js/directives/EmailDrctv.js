@@ -1,4 +1,4 @@
-angular.module('EmailApp')
+angular.module('emailApp')
     .directive('email', function EmailDrctv ($timeout) {
         'use strict';
 
@@ -9,7 +9,6 @@ angular.module('EmailApp')
             templateUrl: "js/directives/email.tmpl.html",
             controllerAs: 'email',
             controller: function ($routeParams, $scope, EmailFactory) {
-                console.log("EmailDrctv controller function run.");
                 this.message = {};
 
                 this.reply = function (message) {

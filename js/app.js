@@ -1,4 +1,4 @@
-angular.module('EmailApp', [
+angular.module('emailApp', [
     'ngRoute', 
     'ngSanitize'
 ]).config(function ($routeProvider) {
