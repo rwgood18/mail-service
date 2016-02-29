@@ -13,6 +13,7 @@ angular.module('emailApp')
 
                 this.reply = function (message) {
                     EmailFactory.reply(message);
+                    $scope.response = "";
                 };
 
                 var getMessage = EmailFactory.getMessage($routeParams);
