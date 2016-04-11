@@ -16,8 +16,13 @@ angular.module('emailApp', [
             controller: 'EmailCtrl',
             controllerAs: 'email'
         })
+        .when('/login', {
+            templateUrl: 'views/login.html',
+            controller: 'LoginCtrl',
+            controllerAs: 'login'
+        })
         .otherwise({
-            redirectTo: '/inbox'
+            redirectTo: '/login'
         });
 }).run(function ($rootScope) {
     $rootScope.$on('$routeChangerError', function (event, current, 
